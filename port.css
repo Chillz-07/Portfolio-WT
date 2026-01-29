@@ -1,0 +1,120 @@
+   *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top right,#1f4e7a,#0b0f1c 60%);
+  color:#fff;
+}
+
+.container{
+  padding:60px;
+}
+
+/* TOP */
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:80px;
+}
+
+.left{
+  width:55%;
+}
+
+.pill{
+  background:linear-gradient(90deg,#9f7aea,#6b46c1);
+  padding:14px 36px;
+  border-radius:40px;
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.left p{
+  line-height:1.7;
+  color:#d6d6f0;
+  margin-bottom:30px;
+}
+
+h3{
+  margin-bottom:15px;
+}
+
+.contact span{
+  display:block;
+  margin-bottom:12px;
+  color:#e0e0ff;
+}
+
+.contact i{
+  color:#9f7aea;
+  margin-right:10px;
+}
+
+/* PHOTO */
+.right{
+  width:35%;
+  display:flex;
+  justify-content:center;
+}
+
+.photo-frame{
+  background:#6b46c1;
+  padding:14px;
+  border-radius:60px;
+}
+
+.photo-frame img{
+  width:300px;
+  border-radius:50px;
+}
+
+/* BOTTOM CARD */
+.bottom{
+  margin-top:80px;
+  background:linear-gradient(135deg,#7f5bd6,#9f7aea);
+  border-radius:80px;
+  padding:60px;
+  display:flex;
+  gap:60px;
+}
+
+.box{
+  width:50%;
+}
+
+h4{
+  margin-top:20px;
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+h4 span{
+  font-size:14px;
+  opacity:.85;
+  margin-left:12px;
+}
+
+.skills div{
+  display:inline-block;
+  background:rgba(255,255,255,.15);
+  padding:10px 16px;
+  border-radius:12px;
+  margin:6px 6px 0 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px 30px;
+}
+
+.box p{
+  color:#f5f5ff;
+}
