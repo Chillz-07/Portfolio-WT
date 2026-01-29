@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <style>
+        *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at top right,#1f4e7a,#0b0f1c 60%);
+  color:#fff;
+}
+
+.container{
+  padding:60px;
+}
+
+/* TOP */
+.top{
+  display:flex;
+  justify-content:space-between;
+  gap:80px;
+}
+
+.left{
+  width:55%;
+}
+
+.pill{
+  background:linear-gradient(90deg,#9f7aea,#6b46c1);
+  padding:14px 36px;
+  border-radius:40px;
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.left p{
+  line-height:1.7;
+  color:#d6d6f0;
+  margin-bottom:30px;
+}
+
+h3{
+  margin-bottom:15px;
+}
+
+.contact span{
+  display:block;
+  margin-bottom:12px;
+  color:#e0e0ff;
+}
+
+.contact i{
+  color:#9f7aea;
+  margin-right:10px;
+}
+
+/* PHOTO */
+.right{
+  width:35%;
+  display:flex;
+  justify-content:center;
+}
+
+.photo-frame{
+  background:#6b46c1;
+  padding:14px;
+  border-radius:60px;
+}
+
+.photo-frame img{
+  width:300px;
+  border-radius:50px;
+}
+
+/* BOTTOM CARD */
+.bottom{
+  margin-top:80px;
+  background:linear-gradient(135deg,#7f5bd6,#9f7aea);
+  border-radius:80px;
+  padding:60px;
+  display:flex;
+  gap:60px;
+}
+
+.box{
+  width:50%;
+}
+
+h4{
+  margin-top:20px;
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+h4 span{
+  font-size:14px;
+  opacity:.85;
+  margin-left:12px;
+}
+
+.skills div{
+  display:inline-block;
+  background:rgba(255,255,255,.15);
+  padding:10px 16px;
+  border-radius:12px;
+  margin:6px 6px 0 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px 30px;
+}
+
+.box p{
+  color:#f5f5ff;
+}
+
+    </style>
+
+<div class="container">
+
+  <!-- TOP SECTION -->
+  <section class="top">
+
+    <div class="left">
+      <div class="pill">About me</div>
+
+      <p>
+        Hi! <br><br>
+        My name is Surendrarajah Dinushanth.<br>
+        I am a UX/UI Designer, with experience
+        through projects and subjects in university.
+        <br><br>
+        My objective: Challenge myself in a new environment to learn,
+        develop, improve my skills through different projects and
+        contribute more to the company with my abilities.
+      </p>
+
+      <h3>Contact</h3>
+      <div class="contact">
+        <span><i class="fa-solid fa-envelope"></i> sirchillzv@gmail.com</span>
+        <span><i class="fa-solid fa-phone"></i>+94 716497262</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="photo-frame">
+        <img src="dinu.png" alt="profile">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- BOTTOM CARD -->
+  <section class="bottom">
+
+    <div class="box">
+      <h4>Education <span>2020 - Now</span></h4>
+      <p>Student at university of Sri Jayewardenepura</p>
+
+      <h4>Technical skill</h4>
+      <div class="skills">
+        <div>Figma</div><div>Canva</div><div>Adobe</div>
+        <div>Ai</div>
+      </div>
+
+      <h4>Interest</h4>
+      <p>Design Trends &nbsp; | &nbsp; Technology</p>
+    </div>
+
+    <div class="box">
+      <h4>Soft skill</h4>
+      <div class="grid">
+        <p>Teamwork</p>
+        <p>Critical Thinking</p>
+        <p>Communication</p>
+        <p>Time Management</p>
+      </div>
+
+      <h4>Skill set</h4>
+      <div class="grid">
+        <p>User research</p>
+        <p>Web Design</p>
+        <p>Wireframing</p>
+        <p>App Design</p>
+        <p>Brainstorming</p>
+        <p>Prototyping</p>
+      </div>
+
+      <h4>Language</h4>
+      <p>Tamil &nbsp; | &nbsp; English (Pre-intermediate)&nbsp; | &nbsp; Sinhala (Basic)</p>
+    </div>
+
+  </section>
+
+</div>
+
+<script >// subtle hover like modern portfolio
+document.querySelectorAll(".skills div").forEach(el=>{
+  el.onmouseenter=()=>el.style.transform="scale(1.1)";
+  el.onmouseleave=()=>el.style.transform="scale(1)";
+});
+</script>
+</body>
+</html>
